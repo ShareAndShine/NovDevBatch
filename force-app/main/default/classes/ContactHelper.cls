@@ -1,7 +1,6 @@
 public with sharing class ContactHelper Database.Batchable<sObject> {
    
     
-
     // Get all contacts that are 180 days old 
     public Database.QueryLocator start(Database.BatchableContext bc)
     {
@@ -29,7 +28,7 @@ public with sharing class ContactHelper Database.Batchable<sObject> {
     public void finish(Database.BatchableContext bc)
     {
 		// Sending success or failure emails to admins    
-		// Removed - 5th change
+		
 		// // Send email method which sends out email after the completion of job - 2nd change
 		// Also create a task to admin to look at ourput in APEX jobs - 3rd change
     }

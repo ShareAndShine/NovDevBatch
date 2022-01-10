@@ -1,6 +1,6 @@
 function showMessage()
 {
-    alert('Hi !!! you just clicked a button');
+    console.log('Hi !!! you just clicked a button');
 
     // Read value entered by the user in the text box
     alert(document.getElementById('txtName').value);

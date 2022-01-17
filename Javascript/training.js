@@ -85,3 +85,6 @@ for(i=0 ; i < number.length; i++)
 
 // Finding square root - Option 2
 number.map(z => console.log(z**2));
+
+
+

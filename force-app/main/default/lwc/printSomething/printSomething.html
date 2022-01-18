@@ -1,7 +1,26 @@
 <template>
-    <lightning-card  variant="Narrow"  title="I'm header" icon-name="standard:account">
+
+    <!-- Use {} curly braces to access a propery defined in the JS controller file-->
+
+    <lightning-card  variant="Narrow"  title={headerMsg} icon-name="standard:account">
         <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
-        <p class="slds-p-horizontal_xx-large">Print Something !!!!</p>
-        <p slot="footer">Here I am footer !!!</p>
+        <p class="slds-p-horizontal_xx-large">{bodyMsg}</p>
+        <p slot="footer">{footerMsg}</p>
     </lightning-card>
+
+    <div class="slds-p-vertical_medium">
+        <lightning-card  variant="Narrow"  title="Combo Box" icon-name="standard:account">
+            <lightning-combobox
+                name="Car Type"
+                label="Choose Car type"
+                value=""
+                placeholder="Select Car"
+                options={options}
+                onchange={handleChange}
+                required></lightning-combobox>
+        </lightning-card>
+    </div>
+
+
+
 </template>

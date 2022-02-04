@@ -1,0 +1,18 @@
+img.carimage
+{
+    height:120px;
+    max-width:initial;
+    pointer-events: none;
+}
+
+.onwertile
+{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tile
+{
+    padding: 8px;    
+    border-radius: 0.25rem;
+}

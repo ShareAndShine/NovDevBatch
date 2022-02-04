@@ -1,0 +1,18 @@
+<template>
+    <lightning-layout multiple-rows>
+            <lightning-layout-item size="12">
+                <lightning-tabset >
+                    <lightning-tab label="Car Details" value="carDetails" onactive={tabChangeHandler}> 
+                        <c-car-details car-detail={car}></c-car-details>
+                    </lightning-tab>
+                    <lightning-tab label="Add Car Experience" value="addcarexperience" onactive={tabChangeHandler}>
+                        <c-add-experience></c-add-experience>
+                    </lightning-tab>
+                    <lightning-tab label="View Car Experiences" value="viewcarexperience" onactive={tabChangeHandler}>
+                        <c-view-experience></c-view-experience>
+                    </lightning-tab>
+                </lightning-tabset>
+            </lightning-layout-item>
+
+    </lightning-layout>
+</template>

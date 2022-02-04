@@ -1,6 +1,9 @@
 <template>
-    <div class="tile">
-        <img src={car.Picture__c} alt="Car image" class="carimage">
-        <p class="onwertile slds-align_absolute-center">{car.Contact__r.Name}</p>
-    </div>
+
+    <a onclick={carSelectHandler}>
+        <div class="tile">
+            <img src={car.Picture__c} alt="Car image" class="carimage">
+            <p class="onwertile slds-align_absolute-center">{car.Contact__r.Name}</p>
+        </div>
+    </a>
 </template>
